@@ -1,14 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 *,
 ::before,
 ::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
 }
 body{
     font-family: sans-serif;
     color: rgb(255, 255, 255);
-    background: rgb(29, 29, 29);
+    background: #011212;
+    min-height: 1500px;
+}
+header{
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+#sound{
+    padding: 7px;
+    background-color: #011212;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.sound-cloud{
+    font-size: 1.2rem;
+    margin: 7px;
+    color: #007F80;
+}
+.on-off{
+    cursor: pointer;
+    margin-left: 5px;
+}
+#off{
+    color: #007f80;
+}
+#on{
+    display: none;
+    color: #08fdd8;
+}
+.btns-container .fas{
+    font-size: 2rem;
+    padding: 10px;
+    background-color: #011212;
+    color: #fff;
+    cursor: pointer;
+}
+.btns-container .fas:nth-child(2){
+    display: none;
+}
+
+
+/* hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee for the scroll scroll */
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    
+}
+
+section:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #004242, #011212, transparent) ;
+    z-index: 5;
+    
+}
+section:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #004242 ;
+    z-index: 5;
+    mix-blend-mode: color;
+}
+#keyboard{
+    z-index: 5;
+}
+
+
+#text{
+    margin-left: 7%;
+    position: relative;
+    color: #fff;
+    margin-top: 7%;
+    font-size: 17em;
+    z-index: 2;
+}
+#name{
+    position: absolute;
+    color: #fff;
+    top: 5em;
+    margin-left: 8.5%;
+    /* left: 0.2em; */
+    font-size: 5em;
+    z-index: 2;
 }

@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css" >
+    <link rel="stylesheet" type= "text/css" href="css/styles.css" >
     <link rel="stylesheet" href="css/all.min.css" >
     
+
 </head>
 <body>
+    
     <header>
         <div id="sound">
             <audio id="myAudio">
@@ -20,13 +22,50 @@
             <div class="on-off">
                 <span id="off">OFF</span>
                 <span id="on">ON</span>
+
             </div>
+            
         </div>
+        
+
         <div class="btns-container">
             <i class="fas fa-bars bars"></i>
             <i class="fas fa-times times"></i>
         </div>
+
+        <h2 id="name">I'm Ananya.</h2>
     </header>
     
+
+    <section>
+        <img src="./moon.png" id="keyboard" >
+        <!-- <img src="moon.png" id="moon" > -->
+        <!-- <img src="mountain.png" id="mountain" > -->
+
+        <h2 id="text" >Hello,</h2>
+         
+    </section>
+
+    <script type="text/javascript">
+
+        // let moon= document.getElementById("moon");
+        let keyboard= document.getElementById("keyboard");
+        
+        window.addEventListener('scroll', function()
+        {
+            var value = window.scrollY;
+
+            // bg.style.top = value *0.5 +'px';
+            // moon.style.top = -value *0.6 +'px';
+            keyboard.style.top = value *0.15 +'px';
+            text.style.top = value *1.5 +'px';
+
+        })
+        
+    </script>
+    
+    
+    
+    <script src="index.js"></script>
 </body>
 </html>
