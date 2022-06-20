@@ -13,7 +13,7 @@ body{
     font-family: sans-serif;
     color: rgb(255, 255, 255);
     background: #011212;
-    min-height: 1500px;
+    /* min-height: 1500px; */
 }
 header{
     width: 95%;
@@ -49,16 +49,6 @@ header{
     display: none;
     color: #08fdd8;
 }
-.btns-container .fas{
-    font-size: 2rem;
-    padding: 10px;
-    background-color: #011212;
-    color: #fff;
-    cursor: pointer;
-}
-.btns-container .fas:nth-child(2){
-    display: none;
-}
 
 
 /* hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee for the scroll scroll */
@@ -70,9 +60,13 @@ section{
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+    scroll-snap-align: start;
     /* align-items: center; */
+    
 }
-
+section:nth-child(1){
+    margin-top: 10px;
+}
 section img{
     position: absolute;
     top: 0;
@@ -93,7 +87,6 @@ section:before{
     height: 100px;
     background: linear-gradient(to top, #004242, #011212, transparent) ;
     z-index: 5;
-    
 }
 section:after{
     content: '';
@@ -128,3 +121,5 @@ section:after{
     font-size: 5em;
     z-index: 2;
 }
+
+
