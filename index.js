@@ -24,3 +24,20 @@ const soundTrack = (soundState) => {
 // hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 
 
+keyboard= document.getElementById("keyboard");
+        
+window.addEventListener('scroll', function()
+{
+    var value = window.scrollY;
+    // bg.style.top = value *0.5 +'px';
+    // moon.style.top = -value *0.6 +'px';
+    keyboard.style.top = value *0.15 +'px';
+    text.style.top = value *1.5 +'px';
+
+})
+
+const click= document.querySelector('.click p');
+click.innerHTML= click.innerText.split("").map(
+    (char, i)=>
+    `<span style="transform:rotate(${i*5}deg)">${char}</span>`
+).join("")

@@ -10,73 +10,56 @@
     
 
 </head>
+
 <body>
     
-    <header>
-        <div id="sound">
-            <audio id="myAudio">
-                <source src="./uke.mp3" >
-            </audio>
-            <i class="fab fa-soundcloud sound-cloud"></i>
-            <span>Sound</span>
-            <div class="on-off">
-                <span id="off">OFF</span>
-                <span id="on">ON</span>
+ 
+    <div id="sound">
+        <audio id="myAudio">
+            <source src="./uke.mp3" >
+        </audio>
+        <i class="fab fa-soundcloud sound-cloud"></i>
+        <span>Sound</span>
+        <div class="on-off">
+            <span id="off">OFF</span>
+            <span id="on">ON</span>
 
-            </div>
-            
         </div>
-        
-
-        <!-- <div class="btns-container">
-            <i class="fas fa-bars bars"></i>
-            <i class="fas fa-times times"></i>
-        </div> -->
-
-        <h2 id="name">I'm Ananya.</h2>
-
-    </header>
+    </div>
 
     
+    <header>
+        <h2 id="name">I'm Ananya.</h2>
+    </header>
 
     <section>
         <img src="./moon.png" id="keyboard" >
-        <!-- <img src="moon.png" id="moon" > -->
+        
         <!-- <img src="mountain.png" id="mountain" > -->
 
         <h2 id="text" >Hello,</h2>
          
-    </section>
+    </section>  
 
-    <!-- <section class="page2">
-        <h2 id="textsec">this is section.</h2>
-    </section> -->
-
-    <div class="container">
-        <section>
-            <h2 id="textsec">this is section.</h2>
-        </section>
-    </div>
-
-
-    <script type="text/javascript">
-
-        // let moon= document.getElementById("moon");
-        let keyboard= document.getElementById("keyboard");
-        
-        window.addEventListener('scroll', function()
-        {
-            var value = window.scrollY;
-
-            // bg.style.top = value *0.5 +'px';
-            // moon.style.top = -value *0.6 +'px';
-            keyboard.style.top = value *0.15 +'px';
-            text.style.top = value *1.5 +'px';
-
-        })
-        
-    </script>
     
+
+    <div id="page2">
+        
+        <img src="[CITYPNG.COM]White Neon Glowing Circle Transparent Background - 1157x1157.png" id="cir" >
+        
+        <!-- <h2 id="textsec">this isn;t section.</h2> -->
+        <div class="circle">
+            <div class="frame"></div>
+            <div class="click">
+                <p id="ctsc">Click image - Click more - Click image to see Projects - Click image -</p>
+            </div>
+
+        </div>
+        <img src="face.png" id="me" >
+    </div>
+    
+    
+
     
     
     <script src="index.js"></script>

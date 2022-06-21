@@ -17,7 +17,8 @@ body{
 }
 header{
     width: 95%;
-    height: 10vh;
+    /* margin-top: 10vh; */
+    /* height: 10vh; */
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -25,13 +26,26 @@ header{
     position: fixed;
     z-index: 2;
 }
+
 #sound{
-    padding: 7px;
-    background-color: #011212;
-    border-radius: 5px;
+    padding: 2px;
+    padding-right: 4px;
+    width: min-content;
+    position: relative;
+    /* background-color: #232626; */
+    border: 2px solid #08fdd8;
+    border-radius: 7px;
     display: flex;
     align-items: center;
     color: #fff;
+
+}
+#page2{
+    /* margin-top: 15; */
+    height: 100vh;
+    align-items: center;
+    background-color: #004242;
+    background: linear-gradient(to bottom, #004242, #011212, transparent) ;
 }
 .sound-cloud{
     font-size: 1.2rem;
@@ -56,17 +70,15 @@ header{
 section{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     scroll-snap-align: start;
-    /* align-items: center; */
     
 }
-section:nth-child(1){
-    margin-top: 10px;
-}
+
+
 section img{
     position: absolute;
     top: 0;
@@ -81,12 +93,11 @@ section img{
 section:before{
     content: '';
     position: absolute;
-    right: 0;
     bottom: 0;
     width: 100%;
     height: 100px;
     background: linear-gradient(to top, #004242, #011212, transparent) ;
-    z-index: 5;
+    z-index: 1000;
 }
 section:after{
     content: '';
@@ -108,18 +119,81 @@ section:after{
     margin-left: 7%;
     position: relative;
     color: #fff;
-    margin-top: 7%;
-    font-size: 17em;
+    margin-top: 5.4%;
+    font-size: 16.2em;
     z-index: 2;
 }
 #name{
     position: absolute;
     color: #fff;
-    top: 5em;
+    top: 4.4em;
     margin-left: 8.5%;
-    /* left: 0.2em; */
     font-size: 5em;
     z-index: 2;
 }
 
+#cir{
+    position: absolute;
+    margin-top: 2.3%;
+    margin-left: 48%;
+    height: 420px;
+}
+#me{
+    position: absolute;
+    margin-top: -3.8rem;
+    border: 2px solid #007F80;
+    border-radius: 50%;
+    margin-left: 50%;
+    height: 620px;
+}
 
+.circle{
+    position: absolute;
+    margin-top: 3.3%;
+    margin-left: 48%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    /* background: #ccc; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frame{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: url(img.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.click{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 17s linear infinite;
+}
+@keyframes rotateText{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.click span{
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 200px;
+
+}
+
+#ctsc{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+    
+}
