@@ -41,3 +41,9 @@ click.innerHTML= click.innerText.split("").map(
     (char, i)=>
     `<span style="transform:rotate(${i*5}deg)">${char}</span>`
 ).join("")
+
+
+function showprojects(){
+    document.getElementById("p1").classList.toggle("active");
+
+}
