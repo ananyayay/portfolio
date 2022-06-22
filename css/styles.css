@@ -363,3 +363,61 @@ ul li .list h2{
     margin: 0;
     padding: 0;
 }
+#filler{
+    height: 10vh;
+}
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div .loader{
+    animation: animateBg 10s linear infinite;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    align-self: center;
+    align-content: center;
+    margin: auto;
+}
+@keyframes animateBg{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter:  hue-rotate(360deg);
+    }
+}
+div .loader span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg*var(--i)));
+
+}
+div .loader span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00ff0a;
+    box-shadow: 0 0 10px #00ff0a,
+                0 0 20px #00ff0a,
+                0 0 30px #00ff0a,
+                0 0 40px #00ff0a,
+                0 0 60px #00ff0a,
+                0 0 80px #00ff0a,
+                0 0 100px #00ff0a;
+
+}
