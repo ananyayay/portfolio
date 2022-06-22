@@ -2,6 +2,7 @@ const soundCloud = document.querySelector('.sound-cloud');
 const off = document.querySelector('#off');
 const on = document.querySelector('#on');
 const myAudio = document.querySelector('#myAudio');
+// const on = document.querySelector('#on');
 
 off.addEventListener('click', () => soundTrack('off'));
 on.addEventListener('click', () => soundTrack('on'));

@@ -43,6 +43,8 @@ header{
 #page2{
     /* margin-top: 15; */
     height: 100vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #004242;
     background: linear-gradient(to bottom, #004242, #011212, transparent) ;
@@ -63,7 +65,9 @@ header{
     display: none;
     color: #08fdd8;
 }
-
+#owla{
+    width: 100px;
+}
 
 /* hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee for the scroll scroll */
 
@@ -134,16 +138,16 @@ section:after{
 
 #cir{
     position: absolute;
-    margin-top: 6.3%;
-    margin-left: 47%;
-    height: 420px;
+    /* margin-top: 9.3%;
+    margin-left: 50%; */
+    height: 340px;
 }
 #me{
     position: absolute;
     margin-top: 6rem;
     border: 2px solid #08fdd8;
     border-radius: 50%;
-    margin-left: 65%;
+    margin-left: 35%;
     height: 400px;
     
 }
@@ -284,4 +288,69 @@ section:after{
     opacity: 50%;
     margin-top: 27%;
     margin-left: 33.5%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: -50%;
+    margin-top: 5%;
+
+}
+ul li{
+    position: relative;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background:#007F80;
+
+    margin: 0 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+ul li:hover{
+    background: #08fdd8;
+    box-shadow: 0 0 0 4px #004242 ,
+                0 0 0 6px #08fdd8 ;
+}
+
+ul li .list{
+    position: absolute;
+    bottom: 55px;
+    width: 400px;
+    padding: 20px;
+    background: #000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-47%) translateY(-50px) ;
+}
+
+ul li:hover .list{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    transform: translateX(-47%) translateY(0px) ;
+}
+
+ul li .list:before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: rgb(0, 0, 0);
+
+    bottom: -15px;
+    left: 190px;
+
+    transform: rotate(45deg);
+}
+
+ul li .list h2{
+    margin: 0;
+    padding: 0;
 }
