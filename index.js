@@ -2,19 +2,22 @@ const soundCloud = document.querySelector('.sound-cloud');
 const off = document.querySelector('#off');
 const on = document.querySelector('#on');
 const myAudio = document.querySelector('#myAudio');
-// const on = document.querySelector('#on');
+
+const credit = document.querySelector('#credit');
 
 off.addEventListener('click', () => soundTrack('off'));
 on.addEventListener('click', () => soundTrack('on'));
 
 const soundTrack = (soundState) => {
     if(soundState === 'off'){
+        credit.style.visibility = 'visible';
         on.style.display = 'block';
         off.style.display = 'none';
         soundCloud.style.color= '#08fdd8';
         myAudio.play();
     }
     if(soundState === 'on'){
+        
         on.style.display = 'none';
         off.style.display = 'block';
         soundCloud.style.color= '#108072';
@@ -30,7 +33,7 @@ keyboard= document.getElementById("keyboard");
 window.addEventListener('scroll', function()
 {
     var value = window.scrollY;
-    // bg.style.top = value *0.5 +'px';
+    bg.style.top = value *0.5 +'px';
     // moon.style.top = -value *0.6 +'px';
     keyboard.style.top = value *0.15 +'px';
     text.style.top = value *1.5 +'px';

@@ -65,9 +65,7 @@ header{
     display: none;
     color: #08fdd8;
 }
-#owla{
-    width: 200px;
-}
+
 
 /* hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee for the scroll scroll */
 
@@ -117,7 +115,9 @@ section:after{
 #keyboard{
     z-index: 5;
 }
-
+#bg{
+    
+}
 
 #text{
     margin-left: 7%;
@@ -158,7 +158,33 @@ section:after{
     margin-left: 67%;
     color: #004242;
 }
-
+#owla{
+    position: relative;
+    width: 290px;
+    padding: 4.5px;
+    align-self: center;
+}
+#bea{
+    position: relative;
+    width: 290px;
+    padding: 6px;
+    background-color: #Fff;
+    align-self: center;
+}
+#risc{
+    position: relative;
+    width: 230px;
+    padding: 6px;
+    background-color: #Fff;
+    align-self: center;
+}
+#sl{
+    position: relative;
+    width: 180px;
+    padding: 6px;
+    background-color: #Fff;
+    align-self: center;
+}
 .circle{
     position: absolute;
     margin-top: 7.3%;
@@ -301,6 +327,8 @@ ul{
     margin: 0;
     padding: 0;
     display: flex;
+    border-radius: 7%;
+    border-color: #08fdd8;
     margin-left: -41.4%;
     margin-top: 5%;
 }
@@ -310,6 +338,8 @@ ul li{
     width: 20px;
     height: 20px;
     background:#007F80;
+    border-radius: 2%;
+    
     margin: 0 10px;
     border-radius: 50%;
     transition: 0.5s;
@@ -317,6 +347,7 @@ ul li{
 }
 ul li:hover{
     background: #08fdd8;
+    
     box-shadow: 0 0 0 4px #004242 ,
                 0 0 0 6px #08fdd8 ;
 }
@@ -326,7 +357,7 @@ ul li .list{
     bottom: 55px;
     width: 320px;
     padding: 20px;
-    background: #004242;
+    background: #235c64;
     box-sizing: border-box;
     border-radius: 4px;
     visibility: hidden;
@@ -338,6 +369,7 @@ ul li .list{
 ul li:hover .list{
     
     visibility: visible;
+    
     opacity: 1;
     transition: 0.5s;
     transform: translateX(-47%) translateY(0px) ;
@@ -348,10 +380,9 @@ ul li .list:before{
     position: absolute;
     width: 30px;
     height: 30px;
-    background: #004242;
-
+    background: #235c64;
     bottom: -15px;
-    left: 190px;
+    left: 145px;
 
     transform: rotate(45deg);
 }
@@ -359,6 +390,7 @@ ul li .list:before{
 ul li .list h2{
     margin: 0;
     padding: 0;
+    
 }
 
 .loader-wrapper {
@@ -418,6 +450,7 @@ ul li .list h2{
     color: #007F80;
 }
 #credit{
+    visibility: hidden;
     position: absolute;
     margin-top: 19%;
     left: 8%;
