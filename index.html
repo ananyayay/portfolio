@@ -11,37 +11,9 @@
 
 </head>
 
-<body>
-    <div id="filler"></div>
-
-    <div class="loader-wrapper">
-       
-        <div class="loader">
-            <span style="--i:1;"></span>
-            <span style="--i:2;"></span>
-            <span style="--i:3;"></span>
-            <span style="--i:4;"></span>
-            <span style="--i:5;"></span>
-            <span style="--i:6;"></span>
-            <span style="--i:7;"></span>
-            <span style="--i:8;"></span>
-            <span style="--i:9;"></span>
-            <span style="--i:10;"></span>
-            <span style="--i:11;"></span>
-            <span style="--i:12;"></span>
-            <span style="--i:13;"></span>
-            <span style="--i:14;"></span>
-            <span style="--i:15;"></span>
-            <span style="--i:16;"></span>
-            <span style="--i:17;"></span>
-            <span style="--i:18;"></span>
-            <span style="--i:19;"></span>
-            <span style="--i:20;"></span>
-        </div>
+<body class="preload">
     
- 
-     
-    </div>
+   
 
     <div id="sound">
         <audio id="myAudio">
@@ -68,7 +40,10 @@
     </section>  
 
     <div id="page2">
-        
+        <div>
+            <h3 id="myproj">my projects</h3>
+        </div>
+
         <ul>
             <li>
                 <div class="list">
@@ -108,13 +83,14 @@
             </li>
         </ul>
         
-        
+
+
         <!-- <h2 id="textsec">this isn;t section.</h2> -->
         <div class="circle">
             <img src="whitecircle.png" id="cir" >
             <div class="frame"></div>
             <div class="click">
-                <p id="ctsc">Click image - Click more - Click image to see Projects - Click image -</p>
+                <p id="ctsc"> Hover Over - Hover Over the dots - Hover Over - Click my Image maybe -</p>
             </div>
 
         </div>
@@ -129,7 +105,7 @@
                 
                 <div class="close-btn" onclick="showprojects()" >&times</div>
                 <h2>ah, you got me!</h2>
-                <p><br>thanks for clicking my image, it is to say "heya"<br><br></p>
+                <p><br>thanks for clicking my image, it just says "heya"<br><br></p>
                 <h5 id="he">he</h5>
 
             </div>
@@ -139,9 +115,26 @@
 
         <img src="face2.png" id="me" onclick="showprojects()" >
 
-
+        <div>
+            <h3 id="credit">bonus points for having played the sound myself?</h3>
+        </div>
+        <div>
+            <h3 id="desc">Computer Science And Design Student</h3>
+        </div>
+        
     </div>
     
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+     </div>
+     <script src="./css/jquery.min.js"></script>
+     <script>
+         $(window).on("load",function(){
+           $(".loader-wrapper").fadeOut("slow");
+           $("body").removeClass("preload");
+         });
+     </script>
 
     
 
@@ -149,4 +142,5 @@
     
     <script src="index.js"></script>
 </body>
+
 </html>

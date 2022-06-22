@@ -144,11 +144,11 @@ section:after{
 }
 #me{
     position: absolute;
-    margin-top: 6rem;
+    margin-top: 3rem;
     border: 2px solid #08fdd8;
     border-radius: 50%;
-    margin-left: 35%;
-    height: 400px;
+    margin-left: 30%;
+    height: 380px;
     
 }
 #he{
@@ -214,7 +214,6 @@ section:after{
     position: fixed;
     top: 0px;
     left: 0px;
-    
     width: 100vw;
     height: 100vh;
 /* background: rgba(0, 66, 66, 0.7); */
@@ -227,7 +226,7 @@ section:after{
     text-align: left;
     font-size: 25px;
     position: absolute;
-    top: 168.5%;
+    top: 160.5%;
     left: 21.2%;
     transform: translate(-50%, -50%) scale(0);
     background: #0badad;
@@ -242,12 +241,11 @@ section:after{
 .popup .content2{
     
     position: absolute;
-    top: 140%;
+    top: 135%;
     left: 29.2%;
-    transform: translate(-50%, -50%) scale(0);
+    transform: translate(-30%, -50%) scale(0);
     width: 320px;
     height:  0.01px;
-    
     z-index: 2;
     box-sizing: border-box;
 
@@ -303,9 +301,8 @@ ul{
     margin: 0;
     padding: 0;
     display: flex;
-    margin-left: -50%;
+    margin-left: -41.4%;
     margin-top: 5%;
-
 }
 ul li{
     position: relative;
@@ -327,15 +324,15 @@ ul li:hover{
 ul li .list{
     position: absolute;
     bottom: 55px;
-    width: 400px;
+    width: 320px;
     padding: 20px;
-    background: #000;
+    background: #004242;
     box-sizing: border-box;
     border-radius: 4px;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-    transform: translateX(-47%) translateY(-50px) ;
+    transform: translateX(-58%) translateY(-50px) ;
 }
 
 ul li:hover .list{
@@ -351,7 +348,7 @@ ul li .list:before{
     position: absolute;
     width: 30px;
     height: 30px;
-    background: rgb(0, 0, 0);
+    background: #004242;
 
     bottom: -15px;
     left: 190px;
@@ -363,61 +360,82 @@ ul li .list h2{
     margin: 0;
     padding: 0;
 }
-#filler{
-    height: 10vh;
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
-.loader-wrapper{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left: 0;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-div .loader{
-    animation: animateBg 10s linear infinite;
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
     position: relative;
-    width: 120px;
-    height: 120px;
-    align-self: center;
-    align-content: center;
-    margin: auto;
-}
-@keyframes animateBg{
-    0%{
-        filter: hue-rotate(0deg);
-    }
-    100%{
-        filter:  hue-rotate(360deg);
-    }
-}
-div .loader span{
-    position: absolute;
-    top: 0;
-    left: 0;
+                         /******** <- Remove this line *********/
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
     width: 100%;
-    height: 100%;
-    transform: rotate(calc(18deg*var(--i)));
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  
+  
+@keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  
+  @keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+  }
 
+.preload {overflow: hidden;}
+
+
+#myproj{
+    position: relative;
+    margin-top: 17%;
+    right: 543px;
+    font-size: 49px;
+    font-family: courier ;
+    color: #007F80;
 }
-div .loader span::before{
-    content: '';
+#credit{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #00ff0a;
-    box-shadow: 0 0 10px #00ff0a,
-                0 0 20px #00ff0a,
-                0 0 30px #00ff0a,
-                0 0 40px #00ff0a,
-                0 0 60px #00ff0a,
-                0 0 80px #00ff0a,
-                0 0 100px #00ff0a;
+    margin-top: 19%;
+    left: 8%;
+    font-size: 1.7em;
+    font-family:'Courier New', Courier, monospace ;
+    font-weight: 50;
+    font-style: italic;
+    color: rgb(169, 169, 169);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
+#desc{
+    position: absolute;
+    margin-top: 15%;
+    left: 8%;
+    font-size: 2.4em;
+font-weight:100;
+font-family: helvetica;
+
+    color: rgb(169, 169, 169);
 }
