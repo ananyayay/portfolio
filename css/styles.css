@@ -115,8 +115,34 @@ section:after{
 #keyboard{
     z-index: 5;
 }
-#bg{
-    
+#bg
+{
+    width: 160px;
+    height: 160px;
+left: 75%;
+z-index: 10000;
+filter:saturate(90%);
+
+}#tri
+{
+    width: 168px;
+    height: 136px;
+left: 79%;
+z-index: 10000;
+top: 20%;
+filter: brightness(100%);
+filter: contrast(100%);
+}
+#square
+{
+filter: blur(90%);
+filter: brightness(100%);
+filter: drop-shadow(100%);
+    width: 120px;
+    height: 120px;
+    margin-top: 13%;
+left: 70%;
+z-index: 10000;
 }
 
 #text{
