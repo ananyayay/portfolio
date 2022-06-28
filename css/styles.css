@@ -32,7 +32,6 @@ header{
     padding-right: 4px;
     width: min-content;
     position: relative;
-    /* background-color: #232626; */
     border: 2px solid #08fdd8;
     border-radius: 7px;
     display: flex;
@@ -106,7 +105,7 @@ section:after{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #004242 ;
+    /* background: #004242 ; */
     z-index: 5;
     mix-blend-mode: color;
 }
@@ -478,7 +477,35 @@ ul li .list h2{
 }
 
 
+@media screen and (max-width:1440px){
+    section{
+        width: 100%;
+        height: 90vh;        
+    }
+    #myproj{
+        margin-top: 0%;
+        font-size: 4rem;
+        margin-left: 5rem;
 
+    }
+    #desc{
+        left: 9rem;
+        font-size: 2.7em;
+    }
+    #credit{
+        left: 9rem;
+        font-size: 1.9em;
+    }
+    #text{
+        font-size: 19rem;
+    }
+    #name{
+        margin-top: 70%;
+        margin-left: 9rem;
+        font-size: 6rem;
+        z-index: 2;
+    }
+}
 
 @media screen and (max-width:1280px){
     #myproj{
@@ -501,7 +528,6 @@ ul li .list h2{
         margin-top: 70%;
         margin-left: 9rem;
         font-size: 4.9rem;
-        z-index: 2;
     }
     
     
