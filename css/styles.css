@@ -79,8 +79,6 @@ section{
     scroll-snap-align: start;
     
 }
-
-
 section img{
     position: absolute;
     top: 0;
@@ -143,24 +141,24 @@ filter: drop-shadow(100%);
     margin-top: 13%;
 left: 70%;
 }
-
 #text{
-    margin-left: 7%;
+    margin-left: 8rem;
     position: relative;
     color: #fff;
-    margin-top: 5.4%;
-    font-size: 16.2em;
+    margin-top: 8%;
+    font-size: 16.2rem;
     z-index: 2;
 }
+
+/* Hereeeee page 2 */
 #name{
     position: absolute;
     color: #fff;
-    top: 4.4em;
-    margin-left: 8.5%;
-    font-size: 5em;
+    margin-top: 72%;
+    margin-left: 9rem;
+    font-size: 5rem;
     z-index: 2;
 }
-
 #cir{
     position: absolute;
     /* margin-top: 9.3%;
@@ -230,7 +228,6 @@ left: 70%;
     background-size: cover;
     border-radius: 30%;
 }
-
 .click{
     position:absolute;
     width: 100%;
@@ -260,25 +257,22 @@ left: 70%;
     font-family: consolas;
     
 }
-
+/* Popup */
 .popup .overlay{
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100vw;
     height: 100vh;
-/* background: rgba(0, 66, 66, 0.7); */
     z-index: 1;
     display: none;
 }
-
-
 .popup .content{
     text-align: left;
     font-size: 25px;
     position: absolute;
     top: 160.5%;
-    left: 21.2%;
+    left: 7rem;
     transform: translate(-50%, -50%) scale(0);
     background: #0badad;
     color: #ffffff;
@@ -301,7 +295,6 @@ left: 70%;
     box-sizing: border-box;
 
 }
-
 .popup .close-btn{
     cursor: pointer;
     position: absolute;
@@ -319,25 +312,18 @@ left: 70%;
     align-content: center;
 
 }
-
-
 .popup.active .overlay{
     display: block;
 
 }
-
 .popup.active .content{
     transition: all 300ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
 }
-
 .popup.active .content2{
     transition: all 300ms ease-in-out;
     transform: translate(-70%, -80%) scale(0.355);
 }
-
-
-
 #arrow{
     position: absolute;
     width: 80px;
@@ -346,7 +332,7 @@ left: 70%;
     margin-top: 27%;
     margin-left: 33.5%;
 }
-
+/* Projects */
 ul{
     
     margin: 0;
@@ -354,8 +340,10 @@ ul{
     display: flex;
     border-radius: 7%;
     border-color: #08fdd8;
-    margin-left: -41.4%;
-    margin-top: 5%;
+    margin-left: 1%;
+    margin-right: 39rem;
+    margin-top: 1%;
+    margin-bottom: 3%;
 }
 ul li{
     position: relative;
@@ -364,7 +352,6 @@ ul li{
     height: 20px;
     background:#007F80;
     border-radius: 2%;
-    
     margin: 0 10px;
     border-radius: 50%;
     transition: 0.5s;
@@ -376,7 +363,6 @@ ul li:hover{
     box-shadow: 0 0 0 4px #004242 ,
                 0 0 0 6px #08fdd8 ;
 }
-
 ul li .list{
     position: absolute;
     bottom: 55px;
@@ -390,16 +376,12 @@ ul li .list{
     transition: 0.5s;
     transform: translateX(-58%) translateY(-50px) ;
 }
-
 ul li:hover .list{
-    
     visibility: visible;
-    
     opacity: 1;
     transition: 0.5s;
     transform: translateX(-47%) translateY(0px) ;
 }
-
 ul li .list:before{
     content: '';
     position: absolute;
@@ -408,7 +390,6 @@ ul li .list:before{
     background: #235c64;
     bottom: -15px;
     left: 145px;
-
     transform: rotate(45deg);
 }
 
@@ -418,6 +399,7 @@ ul li .list h2{
     
 }
 
+/* Screen Loader */
 .loader-wrapper {
   width: 100%;
   height: 100%;
@@ -447,8 +429,6 @@ ul li .list h2{
     background-color: #fff;
     animation: loader-inner 2s infinite ease-in;
   }
-  
-  
 @keyframes loader {
     0% { transform: rotate(0deg);}
     25% { transform: rotate(180deg);}
@@ -456,23 +436,21 @@ ul li .list h2{
     75% { transform: rotate(360deg);}
     100% { transform: rotate(360deg);}
   }
-  
-  @keyframes loader-inner {
+@keyframes loader-inner {
     0% { height: 0%;}
     25% { height: 0%;}
     50% { height: 100%;}
     75% { height: 100%;}
     100% { height: 0%;}
   }
-
 .preload {overflow: hidden;}
 
 
 #myproj{
     position: relative;
-    margin-top: 17%;
-    right: 543px;
-    font-size: 49px;
+    margin-bottom: 10%;
+    margin-left: 4.3rem;
+    font-size: 3.3rem;
     font-family: courier ;
     color: #007F80;
 }
@@ -480,7 +458,7 @@ ul li .list h2{
     visibility: hidden;
     position: absolute;
     margin-top: 19%;
-    left: 8%;
+    left: 9rem;
     font-size: 1.7em;
     font-family:'Courier New', Courier, monospace ;
     font-weight: 50;
@@ -492,10 +470,88 @@ ul li .list h2{
 #desc{
     position: absolute;
     margin-top: 15%;
-    left: 8%;
-    font-size: 2.4em;
-font-weight:100;
-font-family: helvetica;
-
+    left: 9rem;
+    font-size: 2.3em;
+    font-weight:100;
+    font-family: helvetica;
     color: rgb(169, 169, 169);
+}
+
+
+
+
+@media screen and (max-width:1280px){
+    #myproj{
+        margin-top: 0%;
+        font-size: 3rem;
+        margin-left: 9rem;
+
+    }
+    ul{
+        margin-left: 2%;
+        margin-top: 1%;
+        /* margin-bottom: 3%; */
+    }
+    #desc{
+        left: 9rem;
+        font-size: 2.3em;
+    }
+    #name{
+        
+        margin-top: 70%;
+        margin-left: 9rem;
+        font-size: 4.9rem;
+        z-index: 2;
+    }
+    
+    
+}
+
+@media screen and (max-width:1265px){
+    #myproj{
+        font-size: 2.9rem;
+        margin-left: 9.1rem;
+    }
+    ul{
+        margin-left: 2%;
+        margin-top: 1%;
+        /* margin-bottom: 3%; */
+    }
+    #desc{
+        left: 9rem;
+        font-size: 2em;
+    }
+    #credit{
+        left: 9rem;
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width:600px){
+    #text{
+        /* margin-left: 7%;
+        position: relative;
+        color: #fff;
+        margin-top: 5.4%; */
+        font-size: 3rem;
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width:820px){
+    #text{
+        
+        font-size: 5rem;
+       
+    }
+    #name{
+        margin-left: 7.7%;
+        margin-top: -2%;
+        font-size: 2.3em;
+    }
+
+}
+
+@media only screen and (max-width:1200){
+    
 }
