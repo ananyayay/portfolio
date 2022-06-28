@@ -477,7 +477,7 @@ ul li .list h2{
 }
 
 
-@media screen and (max-width:1440px){
+@media only screen and (max-width:1440px){
     section{
         width: 100%;
         height: 90vh;        
@@ -486,7 +486,6 @@ ul li .list h2{
         margin-top: 0%;
         font-size: 4rem;
         margin-left: 5rem;
-
     }
     #desc{
         left: 9rem;
@@ -497,7 +496,7 @@ ul li .list h2{
         font-size: 1.9em;
     }
     #text{
-        font-size: 19rem;
+        font-size: 18rem;
     }
     #name{
         margin-top: 70%;
@@ -507,10 +506,14 @@ ul li .list h2{
     }
 }
 
-@media screen and (max-width:1280px){
+@media only screen and (max-width:1280px){
+    section{
+        width: 100%;
+        height: 95vh;        
+    }
     #myproj{
         margin-top: 0%;
-        font-size: 3rem;
+        font-size: 2.8rem;
         margin-left: 9rem;
 
     }
@@ -524,24 +527,25 @@ ul li .list h2{
         font-size: 2.3em;
     }
     #name{
-        
-        margin-top: 70%;
+        margin-top: 65%;
         margin-left: 9rem;
         font-size: 4.9rem;
     }
-    
+    #text{
+        font-size: 15rem;
+    }
     
 }
 
-@media screen and (max-width:1265px){
+/* @media only screen and (max-width:1280px){
     #myproj{
-        font-size: 2.9rem;
-        margin-left: 9.1rem;
+        font-size: 2.68rem;
+        margin-left: 7rem;
     }
     ul{
         margin-left: 2%;
         margin-top: 1%;
-        /* margin-bottom: 3%; */
+        
     }
     #desc{
         left: 9rem;
@@ -552,15 +556,15 @@ ul li .list h2{
         font-size: 1.4em;
     }
     #name{
-        
         margin-top: 65%;
         margin-left: 9rem;
         font-size: 4.9rem;
         z-index: 2;
     }
-}
+} */
 
-@media screen and (max-width:600px){
+
+@media only screen and (max-width:600px){
     #text{
         /* margin-left: 7%;
         position: relative;
@@ -585,6 +589,3 @@ ul li .list h2{
 
 }
 
-@media only screen and (max-width:1200){
-    
-}
