@@ -525,6 +525,13 @@ ul li .list h2{
         left: 9rem;
         font-size: 1.4em;
     }
+    #name{
+        
+        margin-top: 65%;
+        margin-left: 9rem;
+        font-size: 4.9rem;
+        z-index: 2;
+    }
 }
 
 @media screen and (max-width:600px){
